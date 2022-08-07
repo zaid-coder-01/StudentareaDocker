@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block cs %}
+    <link rel="stylesheet" href="{% static 'log.css' %}?{% now 'U' %}">
+{% endblock %}
+{% block cont%}
+<div class="container log">
+    <div class="row">
+        <div class="col-md-6 offset-3">
+            <div class="card" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div class="card-body" style="background-color:rgba(230,230,230,0.3)">
+                    <div style="display:flex; justify-content:center;">
+                        <h4 class="" id="lg">LOGIN</h4>
+                        <h4 class="pl-4" id="sg">SIGN UP</h4>
+                    </div>
+                    <div class="mt-4" id="login">
+                        <form>
+                            <label>UserId</label>
+                            <input type="text" class="form-control" placeholder="Enter UserId"
+                                   style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset, 0 4px 10px 0 rgba(0, 0, 0, 0.19) inset;">
+                            <br>
+
+                            <label>Password</label>
+                            <input type="password" class="form-control" placeholder="Enter Password"
+                                   style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset, 0 4px 10px 0 rgba(0, 0, 0, 0.19) inset;">
+                            <br>
+                            <button type="submit" class="btn btn-success form-control"
+                                    style="font-size:1.2rem; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset, 0 4px 10px 0 rgba(0, 0, 0, 0.19) inset;">
+                                LOGIN
+                            </button>
+                        </form>
+
+                        <div class="card-footer text-center" style="background-color:rgba(0,0,0,0);">
+                            <a href="#">Forget Password ?</a>
+                        </div>
+                    </div>
+
+                    <div class="mt-4" id="reg">
+                        <form>
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Name"
+                                   style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset, 0 4px 10px 0 rgba(0, 0, 0, 0.19) inset;">
+                            <br>
+                            <label>Email</label>
+                            <input type="email" class="form-control" placeholder="Enter Email"
+                                   style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset, 0 4px 10px 0 rgba(0, 0, 0, 0.19) inset;">
+                            <br>
+                            <label>User Id</label>
+                            <input type="text" class="form-control" placeholder="Enter Userid"
+                                   style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset, 0 4px 10px 0 rgba(0, 0, 0, 0.19) inset;">
+                            <br>
+                            <label>Password</label>
+                            <input type="password" class="form-control" placeholder="Enter Password"
+                                   style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset, 0 4px 10px 0 rgba(0, 0, 0, 0.19) inset;">
+                            <br>
+
+                            <button type="submit" class="btn btn-success form-control"
+                                    style="font-size:1.2rem;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset, 0 4px 10px 0 rgba(0, 0, 0, 0.19) inset;">
+                                SIGN UP
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scrip %}
+<script>
+    $(document).ready(function(){
+       $('#reg').hide();
+       $('#lg').css("text-decoration","underline");
+
+    $('#lg').click(function(){
+    $('#sg').css("text-decoration","none");
+    $(this).css("text-decoration","underline");
+     $('#reg').hide();
+     $('#login').show();
+    });
+     $('#sg').click(function(){
+       $('#lg').css("text-decoration","none");
+      $(this).css("text-decoration","underline");
+     $('#reg').show();
+     $('#login').hide();
+    });
+
+    });
+
+
+</script>
+{% endblock %}

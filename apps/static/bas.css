@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap');
+html{
+height:100vh;
+}
+
+:root{
+--pagesize:60rem;
+--pagewidth:55rem;
+}
+body{
+overflow-x:hidden;
+height:100vh;
+}
+.head{
+background-image:url("bac.jpg");
+width:100vw;
+height:60vh;
+}
+.a{
+font-family: 'Lobster', cursive;
+font-size:2rem;
+position:relative;
+}
+.a::before{
+content:" StudentsArea ";
+font-family: 'Lobster', cursive;
+font-size:2rem;
+width: 100%;
+position: absolute;
+color:green;
+top:0.1;
+left:0;
+border-right:0.2rem solid green;
+animation: sl 2s linear infinite;
+overflow:hidden;
+}
+
+li .nab{
+font-size:1.2rem;
+color:black;
+transition: all linear 0.5s;
+}
+li .nab:hover{
+font-size:1.3rem;
+color:green;
+}
+
+
+
+@keyframes sl{
+0% {
+width: 0;
+}
+50% {
+width: 100%;
+}
+100% {
+width: 0;
+}
+
+}
+
+.hcont{
+display: grid;
+justify-content:center;
+}
+.btn-cont{
+margin-left:39%;
+}
+.btnsg{
+font-size:1.2rem;
+color:black;
+background:rgba(255,0,0,0.4);
+border:2px solid black;
+margin-right:2rem;
+width:8rem;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset, 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.btnlg{
+font-size:1.2rem;
+color:black;
+border:2px solid black;
+width:8rem;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) inset, 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.facts{
+margin-top:4rem;
+display: grid;
+justify-content:center;
+font-family: 'Lobster', cursive;
+}
+.fctimg{
+border-radius:50%;
+width:4rem;
+height:4rem;
+margin:auto;
+margin-top:0.8rem;
+}
+.card-body{
+font-family: 'STIX Two Text', serif;
+}
+.card{
+border:none;
+
+}
+.resimg
+{
+background-image:url("bac.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+width:100vw;
+
+}
+.na{
+background-color:rgb(240, 240, 240);
+border:0.1rem solid black;
+margin-top:4.5rem;
+}
+.cad{
+margin-top:10rem;
+}
+.nab1{
+background-image:url("bac.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+
+
+.form-control{
+border:none;
+border-bottom:0.1rem solid black;
+background-color:rgba(0,0,0,0);
+}
+label{
+padding-top:1rem;
+}
+.btn-success{
+width:10rem;
+float:right;
+}
+
+.fa-plus:hover{
+color:blue;
+font-size:1.1rem;
+cursor:pointer;
+}
+.step{
+border-radius:50%;
+width:4rem;
+height:4rem;
+background-color:rgba(0,255,0,0.2);
+font-size:2rem;
+border:0.1rem solid black;
+}
+.stepmain{
+display:flex;
+justify-content:space-around;
+
+}
+
+.srchbox{
+border-radius:2rem;
+padding:0.2rem;
+font-size:1rem;
+position:relative;
+width:0;
+background-color: rgba(0,0,0 ,0);
+border:none;
+transition: all linear 0.5s;
+padding-left:0.6rem;
+}
+.srch{
+border-radius:50%;
+padding:auto;
+background-color:rgba(0,0,0,0);
+color:blue;
+border:0.1rem solid blue;
+position:absolute;
+margin-left:-2rem;
+margin-top:0.3rem;
+}
+.srchbox:focus{
+outline:none;
+}
+
+.srbox:hover >.srchbox{
+transition: all linear 0.5s;
+width:15rem;
+border:0.1rem solid blue;
+background-color:white;
+}
+.srchbox:active{
+width:15rem;
+}
+
+.skhgt{
+margin-top:5.5rem;
+}
+.resume1{
+width:800px;
+height:1000px;
+background-color:white;
+margin-top:7rem;
+margin-left:15rem;
+margin-bottom:6rem;
+}
+
+.proimg{
+width:8rem;
+height:8rem;
+border-radius:50%;
+}
+.contact{
+font-size:1rem;
+float:left;
+display:block;
+}
+.contact i{
+display:block;
+margin-top:0.5rem;
+}
+.skills{
+font-size:1rem;
+margin-top:1.5rem;
+}
+.hname{
+margin-top:6rem;
+text-transform: uppercase;
+border-bottom:0.1rem solid black;
+}
+.summary{
+margin-top:2.5rem;
+}
+.sum{
+height:8rem;
+}
+.experience{
+margin-top:2rem;
+}
+.exp{
+height:15rem;
+}
+.project{
+margin-top:1.3rem;
+}
+.proj{
+height:12rem;
+}
+
+.dd{
+background-color:lightgray;
+margin-left:1rem;
+height:1000px;
+}
+.sheet-index{
+margin-top:7rem;
+margin-left:1.5rem;
+}
+.sheet-btn{
+border-radius:2rem;
+width:6rem;
+border:0.1rem solid green;
+font-size:1.1rem;
+margin-left:0.5rem;
+}
+.sheet-btn:hover{
+background-color:lightgray;
+transform: scale(1.1);
+}
+.cheatContainer{
+height:100%;
+width:70vw;
+}
+.matrixdet{
+margin-top:3rem;
+font-size:1.2rem;
+width:95vw;
+}
+.matrixstep{
+margin-top:3rem;
+font-size:1.2rem;
+width:95vw;
+}
+.matrixsolver{
+background:white;
+margin-top:3rem;
+font-size:1.2rem;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+height:65vh;
+width:95vw;
+}
+.mattype{
+display:flex;
+justify-content:space-around;
+}
+.mattype h3{
+text-shadow:2px 2px 10px rgba(0,0,0,0.4);
+padding-bottom:0.2rem;
+}
+.mattype h3:hover{
+transform:scale(1.1);
+transition:all 0.2s linear;
+cursor:pointer;
+}
+.matval input{
+width:50rem;
+padding:0.3rem;
+margin-left:1rem;
+margin-top:1rem;
+}
+.matbut{
+width:15rem;
+background:rgba(0,255,0,0.9);
+border-radius:2rem;
+font-size:1.3rem;
+padding:0.4rem;
+font-weight:bold;
+margin-right:1rem;
+}
+.matbut:hover{
+transform:scale(1.1);
+}
+.sbtn{
+color:black;
+border-radius:1rem;
+background:linear-gradient(to right,rgba(234,254,95,0.5),rgba(197,133,175,0.6));
+font-size:1.2rem;
+border:1px solid blue;
+padding:0.6rem;
+box-shadow: 8px 10px 11px 0 rgba(0, 0, 0, 0.2)inset, 12px 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sbtn:hover{
+transition:all linear 1s;
+font-weight:bold;
+ transform: scale(1.2);
+ background-color:lightgoldenrodyellow;
+ color:black;
+ border-color:blue;
+}
+.hdg{
+padding-top:4rem;
+text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+
+}
+.sci{
+margin-top:2rem;
+height:20rem;
+}
+.sctype{
+display:flex; justify-content:space-around;
+}
+.sctype:hover{
+cursor:pointer;
+}
+.spkbtn{
+border-radius:2rem; background-color:floralwhite;
+ font-size:1.2rem;padding:0.2rem;width:7rem;
+ font-weight:bold;
+}
